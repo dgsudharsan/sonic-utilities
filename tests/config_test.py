@@ -140,22 +140,6 @@ def mock_run_command_side_effect_untriggered_timer(*args, **kwargs):
         else:
             return ''
 
-def mock_run_command_side_effect_gnmi(*args, **kwargs):
-    command = args[0]
-
-    if kwargs.get('display_cmd'):
-        click.echo(click.style("Running command: ", fg='cyan') + click.style(command, fg='green'))
-
-    if kwargs.get('return_cmd'):
-        if command == "systemctl list-dependencies --plain sonic-delayed.target | sed '1d'":
-            return 'gnmi.timer'
-        elif command == "systemctl list-dependencies --plain sonic.target | sed '1d'":
-            return 'swss'
-        elif command == "systemctl is-enabled gnmi.timer":
-            return 'enabled'
-        else:
-            return ''
-
 
 # Load sonic-cfggen from source since /usr/local/bin/sonic-cfggen does not have .py extension.
 sonic_cfggen = load_module_from_source('sonic_cfggen', '/usr/local/bin/sonic-cfggen')
