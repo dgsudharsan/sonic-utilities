@@ -96,6 +96,7 @@ setup(
         'scripts/dropconfig',
         'scripts/dropstat',
         'scripts/dump_nat_entries.py',
+        'scripts/ecmp_stat',
         'scripts/ecnconfig',
         'scripts/fanshow',
         'scripts/fast-reboot',
