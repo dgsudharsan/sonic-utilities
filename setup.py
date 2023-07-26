@@ -227,7 +227,7 @@ setup(
         'bcrypt==3.2.2',
         'click==7.0',
         'cryptography==3.3.2',
-        'urllib3',
+        'urllib3<2',
         'click-log>=0.3.2',
         'docker>=4.4.4',
         'docker-image-py>=0.1.10',
@@ -260,7 +260,7 @@ setup(
     ],
     tests_require = [
         'pyfakefs',
-        'responses',
+        'responses=0.23.1',
         'pytest',
         'mockredispy>=2.9.3',
         'deepdiff==5.2.3'
