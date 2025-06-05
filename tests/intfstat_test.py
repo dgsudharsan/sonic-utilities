@@ -21,7 +21,7 @@ PortChannel0001      883  608.99 KB/s    0.00/s         0        0  883.00 B/s  
 PortChannel0002      883  608.99 KB/s    0.00/s         0        0  883.00 B/s    0.00/s         0
 PortChannel0003        0     0.00 B/s    0.00/s         0        0    0.00 B/s    0.00/s         0
 PortChannel0004      883  608.99 KB/s    0.00/s         0        0  883.00 B/s    0.00/s         0
-       Vlan1000        0     0.00 B/s    0.00/s         0        0    0.00 B/s    0.00/s         0
+       Vlan1000    1,123     0.00 B/s    0.00/s         0        0    0.00 B/s    0.00/s         0
 """
 
 show_interfaces_counters_rif_output_verbose="""\
@@ -33,7 +33,7 @@ PortChannel0001      883  608.99 KB/s    0.00/s         0        0  883.00 B/s  
 PortChannel0002      883  608.99 KB/s    0.00/s         0        0  883.00 B/s    0.00/s         0
 PortChannel0003        0     0.00 B/s    0.00/s         0        0    0.00 B/s    0.00/s         0
 PortChannel0004      883  608.99 KB/s    0.00/s         0        0  883.00 B/s    0.00/s         0
-       Vlan1000        0     0.00 B/s    0.00/s         0        0    0.00 B/s    0.00/s         0
+       Vlan1000    1,123     0.00 B/s    0.00/s         0        0    0.00 B/s    0.00/s         0
 """
 
 show_interfaces_counters_rif_period="""\
@@ -73,7 +73,7 @@ Ethernet20
                  4 packets
                  3 bytes
                  2 error packets
-              1128 error bytes
+             1,128 error bytes
         TX:
                  8 packets
                754 bytes
@@ -116,7 +116,7 @@ PortChannel0001      883  608.99 KB/s    0.00/s         0        0  883.00 B/s  
 PortChannel0002      883  608.99 KB/s    0.00/s         0        0  883.00 B/s    0.00/s         0
 PortChannel0003        0     0.00 B/s    0.00/s         0        0    0.00 B/s    0.00/s         0
 PortChannel0004      883  608.99 KB/s    0.00/s         0        0  883.00 B/s    0.00/s         0
-       Vlan1000        0     0.00 B/s    0.00/s         0        0    0.00 B/s    0.00/s         0
+       Vlan1000    1,123     0.00 B/s    0.00/s         0        0    0.00 B/s    0.00/s         0
 """
 
 class TestIntfstat(object):
