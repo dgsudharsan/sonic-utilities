@@ -794,6 +794,8 @@ save_frr_info() {
     save_vtysh "show ipv6 route vrf all nexthop-group" "frr.ip6_route.nhg"
     save_vtysh "show zebra fpm stats" "frr.fpm.stats"
     save_vtysh "show zebra dplane detailed" "frr.dplane"
+    save_vtysh "show zebra dplane providers" "frr.dplane.providers"
+    save_vtysh "show event cpu" "frr.event.cpu"
     save_vtysh "show interface vrf all" "frr.interfaces"
     save_vtysh "show zebra" "frr.zebra"
     save_vtysh "show zebra client" "frr.zebra.client"
