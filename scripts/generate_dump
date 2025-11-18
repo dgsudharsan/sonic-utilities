@@ -693,7 +693,7 @@ save_ip_info() {
     save_ip "link" "link"
     save_ip "addr" "addr"
     save_ip "rule" "rule"
-    save_ip "route show table all" "route"
+    #save_ip "route show table all" "route"
     save_ip "neigh" "neigh"
     save_ip "-s neigh show nud noarp" "neigh.noarp"
     save_ip "-s link" "link.stats"
@@ -2062,7 +2062,7 @@ main() {
         /proc/cpuinfo /proc/devices /proc/diskstats /proc/dma \
         /proc/interrupts /proc/iomem /proc/ioports /proc/kallsyms \
         /proc/loadavg /proc/locks /proc/meminfo /proc/misc \
-        /proc/modules /proc/self/mounts /proc/self/net \
+        /proc/modules /proc/self/mounts \
         /proc/pagetypeinfo /proc/partitions /proc/slabinfo \
         /proc/softirqs /proc/stat /proc/swaps /proc/sysvipc /proc/timer_list \
         /proc/uptime /proc/version /proc/vmallocinfo /proc/vmstat \
